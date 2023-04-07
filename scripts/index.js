@@ -1,7 +1,7 @@
 var data;
 var rawFile = new XMLHttpRequest();
 rawFile.overrideMimeType('application/json');
-rawFile.open('GET', 'api/get_all_sights.php', false);
+rawFile.open('GET', 'api/get_all_sights', false);
 rawFile.onreadystatechange = function() {
     if (rawFile.readyState == 4 && rawFile.status == 200) {
         data = JSON.parse(rawFile.responseText);
