@@ -1,18 +1,18 @@
-﻿DROP TABLE Sights;
-CREATE TABLE Sights (
-	id INT NOT NULL AUTO_INCREMENT,
-	text TEXT NOT NULL,
-	lat NUMERIC(8, 5) NOT NULL,
-	lng NUMERIC(8, 5) NOT NULL,
-	old_photo1 VARCHAR(50),
-	old_photo2 VARCHAR(50),
-	old_photo3 VARCHAR(50),
-	photo VARCHAR(50),
-	description TEXT,
-	eng_description TEXT,
-	PRIMARY KEY (id)
+﻿DROP TABLE IF EXISTS `Sights`;
+CREATE TABLE `Sights` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`text` TEXT NOT NULL,
+	`lat` NUMERIC(8, 5) NOT NULL,
+	`lng` NUMERIC(8, 5) NOT NULL,
+	`old_photo1` VARCHAR(50),
+	`old_photo2` VARCHAR(50),
+	`old_photo3` VARCHAR(50),
+	`photo` VARCHAR(50),
+	`description` TEXT,
+	`eng_description` TEXT,
+	PRIMARY KEY (`id`)
 );
-INSERT INTO Sights (text, lat, lng, old_photo1, old_photo2, old_photo3, photo, description, eng_description) VALUES (
+INSERT INTO `Sights` (`text`, `lat`, `lng`, `old_photo1`, `old_photo2`, `old_photo3`, `photo`, `description`, `eng_description`) VALUES (
 	"Пионеры и ветераны на праздновании Дня Победы (на Центральной улице)",
 	44.72178, 37.77258, "26.jpg", "", "", "",
 	"Уже более семидесяти лет назад отгремели последние бои Второй Мировой войны, и мы живем под мирным небом в свободной стране. Каждый год наш город с большим размахом отмечает Всенародный праздник, день Победы. На этом кадре присутствующие чтят память доблестных воинов, отдавших свою жизнь за будущее своего родного города. Ежегодно 9 мая в Новороссийске проводится парад, посвященный этому знаменательному событию. В нем участвуют и живые свидетели тех событий, ведь каждый житель города-героя обязан знать и понимать, как дорого досталась жизнь и труд в свободной стране.",
